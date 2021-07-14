@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximun-scale=1" user-scalable=no>
+    <meta name="author" content="Iñaki Etura">
+    <meta name="copyright" content="Braum.Inc">
+    <meta name="description" content="Registrate para recibir promociones y para mantenernos comunicados">
+    <meta name="keywords" content="Burger, Contacto, Salta">
+    <meta name="language" content="spanish">
+    <meta name="audience" content="all">
+    <meta name="robots" content="index, all, follow">
+    <link rel="icon" type="image/x-icon" href="../img/Braum-_4_.ico">
+    <meta itemprop="telephone" content="387 572-5662">
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@700&family=PT+Serif:ital,wght@1,700&display=swap" rel="stylesheet">
+    <title>Contacto</title>
+
+</head>
+<body>
+    <!-- inicio Header-->
+    <header class="header">
+        <div class="header__logo">
+            <a href="../index.html"><img  class="header__logo-imagen" src="../img/logoSinFondoBraum.png" alt=""></a>
+        </div>
+        <nav class="header__navegacion">
+            <ul class="header__navegación-menu">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="nosotros.html" >Nosotros</a></li>
+                <li><a href="menu.html" >Menu</a>
+                    <ul class="header__navegación-subMenu">
+                        <li><a href="#">Servicio #1</a></li>
+                        <li><a href="#">Servicio #2</a></li>
+                        <li><a href="#">Servicio #3</a></li>
+                    </ul>
+                </li>
+                <li><a href="contacto.html" >Contacto</a></li>
+                <li><a href="novedades.html" >Novedades</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Fin Header-->
+    <hr>
+    <!--Main-->
+    <main class="mainContacto">
+        <!--Formulario de contacto-->
+        <section class="fondoContacto">
+            <div class="formContenedor">
+             <form class="form" action="">
+                <fieldset>
+                     <legend class="formHeader">
+                        <h2 class="formTitle"> <span>Contacto</span> </h2>
+                    </legend>
+                        <label for="nombre" class="formLabel">Nombres:</label>
+                        <input type="text" class="formInput" id="nombre" placeholder="Escriba su nombre" >
+                        
+                        <label for="apellido" class="formLabel">Apellidos:</label>
+                        <input type="text" class="formInput" id="apellido" placeholder="Escriba su apellido">
+                        
+                        <label for="email" class="formLabel">E-mail:</label>
+                        <input type="text" class="formInput" id="email" placeholder="Escriba su correo">
+
+                        <label class="formLabel" for="mensaje">Deja Algún comentario</label> 
+                        <textarea class="formTextArea" name="Comentario" id="mensaje" cols="30" rows="10" placeholder="Ingrese algun comentario"></textarea>
+
+                        <select class="formCivil" name="Estado civil" id="Estado civil">
+                            <option value="Soltero/a">Soltero/a</option>
+                            <option value="Casado/a">Casado/a</option>
+                            <option value="Viudo/a">Viudo/a</option>
+                        </select>
+                        
+                        <div class="formBottom">
+                            <input name="checkbox" type="checkbox" id="checkboxUno">
+                            <label  for="checkboxUno">Quiero recibir promociones por correo!</label>
+                        </div>
+
+                        <input type="reset" class="btnSubmit" placeholder="Limpiar formulario">
+                        
+                        <input type="submit" class="btnSubmit" value="Enviar formulario">
+                   
+                </fieldset>      
+             </form>
+            </div>
+        </section>
+    <!--Formulario de contacto-->    
+    </main>
+    <!--Main-->
+    <hr>
+    <!--inicio Footer-->
+    <Footer class="footer">
+        <nav class="footer__navegacion">
+            <ul class="footer__navegacion-menu">
+                <li><a href="../index.html" >Home</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </Footer>
+    <!--Footer-->
+</body>
+</html>
