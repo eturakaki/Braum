@@ -28,7 +28,9 @@ h1 {
 
 h2 {
   color: black;
-  margin: 10px; }
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px; }
 
 h3 {
   color: black;
@@ -94,7 +96,8 @@ header {
   height: 100%; }
 
 .imagenUno {
-  height: 90vh; }
+  height: 100%;
+  padding: 0px; }
 
 /*HEADER*/
 /*MENU DE NAVEGACIÓN*/
@@ -127,27 +130,10 @@ header {
 
 /*MENU DE NAVEGACIÓN*/
 /* SUBMENÚ DE NAVEGACIÓN*/
-.header__navegación-subMenu {
-  position: absolute;
-  background-color: black;
-  width: 180%;
-  visibility: hidden;
-  opacity: 0;
-  transition: opacity 1.5s; }
-  .header__navegación-subMenu li a {
-    display: block;
-    padding: 15px;
-    color: white;
-    text-decoration: none;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-align: center; }
-
-.header__navegación-menu li:hover .header__navegación-subMenu {
-  visibility: visible;
-  opacity: 1; }
-
-/* SUBMENÚ DE NAVEGACIÓN*/
 /*BLOQUES DE PAGINA*/
+.main {
+  width: 100%; }
+
 .main__bloquedos-enlaceEnP {
   margin: 15px, 15px; }
 
@@ -193,20 +179,20 @@ header {
   margin: 20px;
   flex-grow: 1; }
 
+.main {
+  width: 100%; }
+
+.claseP {
+  margin: 5px; }
+
 .main__espaciosBordes {
-  border-radius: 16px;
-  margin: 10px;
   width: 100%; }
 
 .main__bloqueuno-espaciosBordes {
-  margin: 8px;
-  border-radius: 16px;
   width: 100%; }
 
 .banner {
-  margin: 8px;
   border-radius: 16px;
-  width: 100%;
   height: 850px; }
 
 #bannerPaginaPrincipal {
@@ -468,7 +454,7 @@ th {
     width: 100%;
     height: 100%; }
   .imagenUno {
-    height: 90vh; }
+    height: 100%; }
   /*MENU DE NAVEGACIÓN*/
   .header__navegacion {
     width: 100%;
@@ -494,8 +480,7 @@ th {
   .banner {
     margin: 8px;
     border-radius: 16px;
-    width: 100%;
-    height: 450px; }
+    height: 550px; }
   #bannerPaginaPrincipal {
     height: 100%;
     background-image: url(../img/fondodepantalla.jpg);
@@ -504,29 +489,31 @@ th {
     background-size: 100% 100%;
     border: solid black 3px; }
   /*MENU MENU MENU MENU MENU MENU MENU MENU MENU DE COMIDA*/
-  .tBraum, .juicyBbq, .sophBurger {
+  .tBraum {
     background-color: black; }
-    .tBraum p, .juicyBbq p, .sophBurger p {
+    .tBraum p {
       color: yellow;
       word-spacing: 0.05rem;
       letter-spacing: 0.03rem;
       line-height: 0.969rem;
       list-style-type: none;
+      text-align: center;
       text-align: center; }
-    .tBraum h3, .juicyBbq h3, .sophBurger h3 {
+    .tBraum h3 {
       color: whitesmoke;
       text-align: center; }
-  .doubleCheese, .classic {
+  .doubleCheese {
     background-color: rgba(255, 255, 0, 0.692);
     flex-direction: column-reverse; }
-    .doubleCheese p, .classic p {
+    .doubleCheese p {
       color: black;
       word-spacing: 0.05rem;
       letter-spacing: 0.03rem;
       line-height: 0.969rem;
       list-style-type: none;
+      text-align: center;
       text-align: center; }
-    .doubleCheese h3, .classic h3 {
+    .doubleCheese h3 {
       color: black;
       text-align: center; }
   .imagenMenu {
@@ -559,13 +546,13 @@ th {
     color: darkred;
     transition: all .3s; }
   /*MENU DE COMIDA*/
-  .tBraum, .juicyBbq, .sophBurger {
+  .tBraum {
     background-color: black; }
-    .tBraum h3, .juicyBbq h3, .sophBurger h3 {
+    .tBraum h3 {
       color: whitesmoke;
       font-size: 100px;
       text-align: center; }
-    .tBraum p, .juicyBbq p, .sophBurger p {
+    .tBraum p {
       color: yellow;
       height: 20%;
       word-spacing: 0.05rem;
@@ -575,15 +562,15 @@ th {
       text-align: center;
       margin: 10px;
       font-size: 5vh; }
-  .doubleCheese, .classic {
+  .doubleCheese {
     background-color: rgba(255, 255, 0, 0.692);
     display: flex;
     flex-direction: row; }
-    .doubleCheese h3, .classic h3 {
+    .doubleCheese h3 {
       color: black;
       font-size: 10vh;
       text-align: center; }
-    .doubleCheese p, .classic p {
+    .doubleCheese p {
       color: black;
       height: 20%;
       word-spacing: 0.05rem;
@@ -592,54 +579,4 @@ th {
       list-style-type: none;
       text-align: center;
       margin: 20px;
-      font-size: 5vh; }
-  .juicyBbq {
-    background-color: black; }
-    .juicyBbq h3 {
-      color: whitesmoke;
-      font-size: 100px;
-      text-align: center; }
-    .juicyBbq p {
-      color: yellow;
-      height: 20%;
-      word-spacing: 0.05rem;
-      letter-spacing: 0.03rem;
-      line-height: 0.969rem;
-      list-style-type: none;
-      text-align: center;
-      margin: 10px;
-      font-size: 5vh; }
-  .classic {
-    background-color: rgba(255, 255, 0, 0.692);
-    display: flex;
-    flex-direction: row; }
-    .classic h3 {
-      color: black;
-      font-size: 10vh;
-      text-align: center; }
-    .classic p {
-      color: black;
-      height: 20%;
-      word-spacing: 0.05rem;
-      letter-spacing: 0.03rem;
-      line-height: 0.969rem;
-      list-style-type: none;
-      text-align: center;
-      margin: 20px;
-      font-size: 5vh; }
-  .sophBurger {
-    background-color: black; }
-    .sophBurger h3 {
-      color: whitesmoke;
-      font-size: 100px;
-      text-align: center; }
-    .sophBurger p {
-      color: yellow;
-      height: 20%;
-      word-spacing: 0.05rem;
-      letter-spacing: 0.03rem;
-      line-height: 0.969rem;
-      list-style-type: none;
-      text-align: center;
-      margin: 10px;
       font-size: 5vh; } }

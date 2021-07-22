@@ -35,7 +35,10 @@ h1{
 }
 h2{
     color:black;
-    margin: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+
 
 
 }
@@ -112,7 +115,9 @@ header{
     height: $ancho;
 }
 .imagenUno{
-    height: 90vh;
+    height: 100%;
+    width: 100%;
+    padding: 0px;
  }
 /*HEADER*/
 
@@ -155,33 +160,13 @@ header{
 }
 /*MENU DE NAVEGACIÓN*/
 
-/* SUBMENÚ DE NAVEGACIÓN*/
-.header__navegación-subMenu{
-    position: absolute;
-    background-color: black;
-    width: 180%;
-    visibility: hidden;
-    opacity: 0;
-    transition: opacity 1.5s;
-    li{
-        a{
-            display: block;
-        padding: 15px;
-        color: white;
-        text-decoration: none;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        text-align: center;
-        }
-    }
-}
 
-.header__navegación-menu li:hover .header__navegación-subMenu{
-    visibility: visible;
-    opacity: 1;
-}
 /* SUBMENÚ DE NAVEGACIÓN*/
  
 /*BLOQUES DE PAGINA*/
+.main{
+    width: 100%;
+}
 .main__bloquedos-enlaceEnP{
     margin: 15px, 15px;
 }
@@ -232,22 +217,21 @@ header{
     margin: 20px;
     flex-grow: 1;
 }
-
+.main{
+    width: 100%;
+}
+.claseP{
+    margin: 5px;
+}
 .main__espaciosBordes{
-    border-radius: 16px;
-    margin: 10px;
     width: $ancho;
 }
 
 .main__bloqueuno-espaciosBordes{
-    margin: 8px;
-    border-radius: 16px;
     width: $ancho;
 }
 .banner{
-    margin: 8px;
     border-radius: 16px;
-    width: $ancho;
     height: 850px;
 }
 #bannerPaginaPrincipal{
@@ -543,7 +527,7 @@ th{
         height: $ancho;
     }
     .imagenUno{
-        height: 90vh;
+        height: 100%;
      }
 
     /*MENU DE NAVEGACIÓN*/
@@ -582,16 +566,13 @@ th{
         }
     }
 
-
-
     .banner{
         margin: 8px;
         border-radius: 16px;
-        width: $ancho;
-        height: 450px;
+        height: 550px;
     }
     #bannerPaginaPrincipal{
-        height: $ancho;
+        height: 100%;
         background-image: url(../img/fondodepantalla.jpg);
         background-repeat: no-repeat;
         background-position: center;
@@ -613,27 +594,32 @@ th{
     }
     
     .tBraum{
+        max-width: 100%;
 
         background-color: rgb(0, 0, 0);
         p{
-            @include menu(yellow, 0.05rem, 0.03rem, 0.969rem, none, center)
+            @include menu(yellow, 0.05rem, 0.03rem, 0.969rem, none, center);
+            text-align: center;
         }
-        h3{
+                h3{
             color: whitesmoke;
             text-align: center;
         }
     }
+    .tBraumP
     
     
     .doubleCheese{
+        max-width: 100%;
         background-color: rgba(255, 255, 0, 0.692);
         flex-direction: column-reverse;
         p{
-            @include menu(rgb(0, 0, 0), 0.05rem, 0.03rem, 0.969rem, none, center)
+            @include menu(rgb(0, 0, 0), 0.05rem, 0.03rem, 0.969rem, none, center);
+            text-align: center;
         }
         h3{
             color: rgb(0, 0, 0);
-        text-align: center;
+            text-align: center;
         }
     }
    
