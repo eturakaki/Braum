@@ -455,6 +455,7 @@ th {
 
 /*MENU DE COMIDA*/
 .tBraum {
+  width: 100%;
   background-color: black; }
   .tBraum h3 {
     color: whitesmoke;
@@ -472,12 +473,11 @@ th {
     font-size: 5vh; }
 
 .doubleCheese {
-  background-color: rgba(255, 255, 0, 0.692);
-  display: flex;
-  flex-direction: row; }
+  max-width: 100%;
+  background-color: rgba(255, 255, 0, 0.692); }
   .doubleCheese h3 {
     color: black;
-    font-size: 10vh;
+    font-size: 10%;
     text-align: center; }
   .doubleCheese p {
     color: black;
@@ -490,6 +490,9 @@ th {
     margin: 20px;
     font-size: 5vh; }
 
+.imagenMenu {
+  max-width: 100vh; }
+
 /*CELULARES Y DISPOSITIVOS CHICOS*/
 @media only screen and (max-width: 600px) {
   /*HEADER*/
@@ -501,8 +504,7 @@ th {
     grid-template-columns: 100%;
     grid-template-rows: 1fr 1fr;
     grid-template-areas: "logo" "menu";
-    justify-content: center;
-    align-items: center; }
+    justify-content: center; }
   #logoImagen {
     margin: 25px;
     width: 100px;
@@ -554,94 +556,99 @@ th {
     border: solid black 3px; }
   /*MENU MENU MENU MENU MENU MENU MENU MENU MENU DE COMIDA*/
   .tBraum {
-    max-width: 100%;
-    background-color: black; }
-    .tBraum p {
-      color: yellow;
-      word-spacing: 0.05rem;
-      letter-spacing: 0.03rem;
-      line-height: 0.969rem;
-      list-style-type: none;
-      text-align: center;
-      text-align: center; }
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
     .tBraum h3 {
+      font-size: 2rem;
       color: whitesmoke;
       text-align: center; }
-  .tBraumP .doubleCheese {
-    max-width: 100%;
-    background-color: rgba(255, 255, 0, 0.692);
-    flex-direction: column-reverse; }
-    .tBraumP .doubleCheese p {
-      color: black;
+    .tBraum p {
+      color: yellow;
+      font-size: 1rem;
       word-spacing: 0.05rem;
       letter-spacing: 0.03rem;
       line-height: 0.969rem;
       list-style-type: none;
       text-align: center;
       text-align: center; }
-    .tBraumP .doubleCheese h3 {
-      color: black;
-      text-align: center; }
-  #imagenMenu {
-    height: 50vh; } }
+    .tBraum #imagenMenu {
+      height: 100%; }
+  .doubleCheese {
+    width: 100%;
+    background-color: rgba(255, 255, 0, 0.692);
+    display: flex; }
+    .doubleCheese .doubleCheese__P {
+      order: 1; }
+    .doubleCheese .imagenMenu {
+      order: 2; }
+  .doubleCheese__P p {
+    color: black;
+    font-size: 1rem;
+    word-spacing: 0.05rem;
+    letter-spacing: 0.03rem;
+    line-height: 0.969rem;
+    list-style-type: none;
+    text-align: center;
+    text-align: center;
+    margin: 10px;
+    height: 25px; }
+  .doubleCheese__P h3 {
+    font-size: 2rem;
+    color: black;
+    text-align: center; }
+  .imagenMenu {
+    height: 100%; } }
 
 /*CELULARES Y DISPOSITIVOS CHICOS*/
+/*DISPOSITIVOS MEDIOS*/
 @media only screen and (max-width: 768px) {
-  /*MENU DE NAVEGACIÓN*/
-  .header__navegacion {
-    width: 500px;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: flex-end; }
-  .header__navegación-menu {
-    display: flex; }
-  .header__navegacion ul {
-    list-style: none; }
-  .header__navegación-menu > li {
-    position: relative;
-    display: inline-block; }
-  .header__navegación-menu > li > a {
-    display: block;
-    padding: 15px 10px;
-    color: 353535;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-decoration: none; }
-  .header__navegación-menu li a:hover {
-    color: darkred;
-    transition: all .3s; }
-  /*MENU DE COMIDA*/
+  /*MENU MENU MENU MENU MENU MENU MENU MENU MENU DE COMIDA*/
   .tBraum {
-    background-color: black; }
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
     .tBraum h3 {
+      font-size: 2rem;
       color: whitesmoke;
-      font-size: 100px;
       text-align: center; }
     .tBraum p {
       color: yellow;
-      height: 20%;
+      font-size: 1rem;
       word-spacing: 0.05rem;
       letter-spacing: 0.03rem;
       line-height: 0.969rem;
       list-style-type: none;
       text-align: center;
-      margin: 10px;
-      font-size: 2vh; }
-  .doubleCheese {
-    background-color: rgba(255, 255, 0, 0.692);
-    display: flex;
-    flex-direction: row; }
-    .doubleCheese h3 {
-      color: black;
-      font-size: 10vh;
       text-align: center; }
-    .doubleCheese p {
-      color: black;
-      height: 20%;
-      word-spacing: 0.05rem;
-      letter-spacing: 0.03rem;
-      line-height: 0.969rem;
-      list-style-type: none;
-      text-align: center;
-      margin: 20px;
-      font-size: 5vh; } }
+    .tBraum #imagenMenu {
+      height: 100%; }
+  .doubleCheese {
+    width: 100%;
+    background-color: rgba(255, 255, 0, 0.692);
+    display: flex; }
+    .doubleCheese .doubleCheese__P {
+      order: 1; }
+    .doubleCheese .imagenMenu {
+      order: 2; }
+  .doubleCheese__P p {
+    color: black;
+    font-size: 1rem;
+    word-spacing: 0.05rem;
+    letter-spacing: 0.03rem;
+    line-height: 0.969rem;
+    list-style-type: none;
+    text-align: center;
+    text-align: center;
+    margin: 10px;
+    height: 25px; }
+  .doubleCheese__P h3 {
+    font-size: 2rem;
+    color: black;
+    text-align: center; }
+  .imagenMenu {
+    height: 100%; } }
