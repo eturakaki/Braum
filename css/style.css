@@ -473,22 +473,23 @@ th {
 
 .doubleCheese {
   width: 100%;
-  height: 90vh;
   background-color: rgba(255, 255, 0, 0.692); }
-  .doubleCheese h3 {
-    color: black;
-    font-size: 50px;
-    text-align: center; }
-  .doubleCheese p {
-    color: black;
-    height: 20%;
-    word-spacing: 0.05rem;
-    letter-spacing: 0.03rem;
-    line-height: 0.969rem;
-    list-style-type: none;
-    text-align: center;
-    margin: 20px;
-    font-size: 5vh; }
+
+.doubleCheese__P h3 {
+  color: black;
+  font-size: 50px;
+  text-align: center; }
+
+.doubleCheese__P p {
+  color: black;
+  height: 20%;
+  word-spacing: 0.05rem;
+  letter-spacing: 0.03rem;
+  line-height: 0.969rem;
+  list-style-type: none;
+  text-align: center;
+  margin: 20px;
+  font-size: 5vh; }
 
 .imagenMenu {
   height: 90vh; }
@@ -653,4 +654,4 @@ th {
     color: black;
     text-align: center; }
   .imagenMenu {
-    height: 50%; } }
+    width: 100%; } }
