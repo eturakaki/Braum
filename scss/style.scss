@@ -677,8 +677,10 @@ th{
     
     .tBraum{
         background-color: rgb(0, 0, 0);
- 
-        
+
+    }
+    .tBraum__P{
+        margin: 10px;
         h3{
             font-size: 2rem;
             color: whitesmoke;
@@ -687,8 +689,9 @@ th{
         p{
             @include menu(yellow, 1rem, 0.05rem, 0.03rem, 0.969rem, none, center);
             text-align: center;
+            margin: 10px;
+            height: 25px;
         }
-
     }
     
     
@@ -745,7 +748,10 @@ th{
     
     .tBraum{
         background-color: rgb(0, 0, 0);
-        
+
+    }
+    .tBraum__P{
+        margin: 10px;
         h3{
             font-size: 2rem;
             color: whitesmoke;
@@ -754,10 +760,10 @@ th{
         p{
             @include menu(yellow, 1rem, 0.05rem, 0.03rem, 0.969rem, none, center);
             text-align: center;
+            margin: 10px;
+            height: 25px;
         }
-
     }
-    
     
     
     .doubleCheese{

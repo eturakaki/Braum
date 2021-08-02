@@ -557,11 +557,13 @@ th {
   /*MENU MENU MENU MENU MENU MENU MENU MENU MENU DE COMIDA*/
   .tBraum {
     background-color: black; }
-    .tBraum h3 {
+  .tBraum__P {
+    margin: 10px; }
+    .tBraum__P h3 {
       font-size: 2rem;
       color: whitesmoke;
       text-align: center; }
-    .tBraum p {
+    .tBraum__P p {
       color: yellow;
       font-size: 1rem;
       word-spacing: 0.05rem;
@@ -569,7 +571,9 @@ th {
       line-height: 0.969rem;
       list-style-type: none;
       text-align: center;
-      text-align: center; }
+      text-align: center;
+      margin: 10px;
+      height: 25px; }
   .doubleCheese {
     background-color: rgba(255, 255, 0, 0.692);
     display: flex; }
@@ -601,11 +605,13 @@ th {
   /*MENU MENU MENU MENU MENU MENU MENU MENU MENU DE COMIDA*/
   .tBraum {
     background-color: black; }
-    .tBraum h3 {
+  .tBraum__P {
+    margin: 10px; }
+    .tBraum__P h3 {
       font-size: 2rem;
       color: whitesmoke;
       text-align: center; }
-    .tBraum p {
+    .tBraum__P p {
       color: yellow;
       font-size: 1rem;
       word-spacing: 0.05rem;
@@ -613,7 +619,9 @@ th {
       line-height: 0.969rem;
       list-style-type: none;
       text-align: center;
-      text-align: center; }
+      text-align: center;
+      margin: 10px;
+      height: 25px; }
   .doubleCheese {
     background-color: rgba(255, 255, 0, 0.692);
     display: flex; }
