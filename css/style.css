@@ -454,11 +454,10 @@ th {
 
 /*MENU DE COMIDA*/
 .tBraum {
-  width: 100%;
   background-color: black; }
   .tBraum h3 {
     color: whitesmoke;
-    font-size: 100px;
+    font-size: 50px;
     text-align: center; }
   .tBraum p {
     color: yellow;
@@ -469,10 +468,9 @@ th {
     list-style-type: none;
     text-align: center;
     margin: 10px;
-    font-size: 5vh; }
+    font-size: 2.5rem; }
 
 .doubleCheese {
-  width: 100%;
   background-color: rgba(255, 255, 0, 0.692); }
 
 .doubleCheese__P h3 {
@@ -489,10 +487,11 @@ th {
   list-style-type: none;
   text-align: center;
   margin: 20px;
-  font-size: 5vh; }
+  font-size: 2.5rem; }
 
-.imagenMenu {
-  height: 90vh; }
+.imagenFlex {
+  display: flex;
+  justify-content: center; }
 
 /*CELULARES Y DISPOSITIVOS CHICOS*/
 @media only screen and (max-width: 600px) {

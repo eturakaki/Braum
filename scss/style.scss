@@ -534,23 +534,22 @@ th{
     font-size: $tamañoL;
 }
 .tBraum{
-    width: 100%;
+    
     background-color: black;
     h3{
         color: whitesmoke;
-        font-size: 100px;
+        font-size: 50px;
         text-align: center;
     }
     p{
-        @include menu(yellow, 20%, 0.05rem, 0.03rem, 0.969rem, none, center, 10px, 5vh)
+        @include menu(yellow, 20%, 0.05rem, 0.03rem, 0.969rem, none, center, 10px, 2.5rem)
     }
 }
 
 
 .doubleCheese{
-    width: 100%;
+    
     background-color:rgba(255, 255, 0, 0.692);
-
 }
 
 .doubleCheese__P{
@@ -561,12 +560,15 @@ th{
         text-align: center;
     }
     p{
-        @include menu(rgb(0, 0, 0), 20%, 0.05rem, 0.03rem, 0.969rem, none, center, 20px, 5vh)
+        @include menu(rgb(0, 0, 0), 20%, 0.05rem, 0.03rem, 0.969rem, none, center, 20px, 2.5rem)
     }
 }
-
+.imagenFlex{
+    display: flex;
+    justify-content: center;
+}
 .imagenMenu{
-    height: 90vh;
+
 }
 /*CELULARES Y DISPOSITIVOS CHICOS*/
 @media only screen and (max-width:600px){
