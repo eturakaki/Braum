@@ -556,12 +556,7 @@ th {
     border: solid black 3px; }
   /*MENU MENU MENU MENU MENU MENU MENU MENU MENU DE COMIDA*/
   .tBraum {
-    width: 100%;
-    height: 90vh;
-    background-color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center; }
+    background-color: black; }
     .tBraum h3 {
       font-size: 2rem;
       color: whitesmoke;
@@ -576,43 +571,36 @@ th {
       text-align: center;
       text-align: center; }
   .doubleCheese {
-    width: 100%;
-    height: 90vh;
     background-color: rgba(255, 255, 0, 0.692);
     display: flex; }
     .doubleCheese .doubleCheese__P {
       order: 1; }
-    .doubleCheese .imagenMenu {
+    .doubleCheese .imagenFlex {
       order: 2; }
-  .doubleCheese__P p {
-    color: black;
-    font-size: 1rem;
-    word-spacing: 0.05rem;
-    letter-spacing: 0.03rem;
-    line-height: 0.969rem;
-    list-style-type: none;
-    text-align: center;
-    text-align: center;
-    margin: 10px;
-    height: 25px; }
-  .doubleCheese__P h3 {
-    font-size: 2rem;
-    color: black;
-    text-align: center; }
-  .imagenMenu {
-    height: 70vh; } }
+  .doubleCheese__P {
+    margin: 10px; }
+    .doubleCheese__P p {
+      color: black;
+      font-size: 1rem;
+      word-spacing: 0.05rem;
+      letter-spacing: 0.03rem;
+      line-height: 0.969rem;
+      list-style-type: none;
+      text-align: center;
+      text-align: center;
+      margin: 10px;
+      height: 25px; }
+    .doubleCheese__P h3 {
+      font-size: 2rem;
+      color: black;
+      text-align: center; } }
 
 /*CELULARES Y DISPOSITIVOS CHICOS*/
 /*DISPOSITIVOS MEDIOS*/
 @media only screen and (max-width: 768px) {
   /*MENU MENU MENU MENU MENU MENU MENU MENU MENU DE COMIDA*/
   .tBraum {
-    width: 100%;
-    height: 90vh;
-    background-color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center; }
+    background-color: black; }
     .tBraum h3 {
       font-size: 2rem;
       color: whitesmoke;
@@ -627,8 +615,6 @@ th {
       text-align: center;
       text-align: center; }
   .doubleCheese {
-    width: 100%;
-    height: 90vh;
     background-color: rgba(255, 255, 0, 0.692);
     display: flex; }
     .doubleCheese .doubleCheese__P {
