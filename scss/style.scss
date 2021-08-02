@@ -566,6 +566,7 @@ th{
 
 .imagenMenu{
     width: 90vh;
+    height: 100%;
 }
 /*CELULARES Y DISPOSITIVOS CHICOS*/
 @media only screen and (max-width:600px){
@@ -724,7 +725,8 @@ th{
         
     }
     .imagenMenu{
-        height: 90vh;
+        width: 90vh;
+        height: 100%;
         
     }
    
@@ -804,7 +806,8 @@ th{
         
     }
     .imagenMenu{
-        height: 90vh;
+        width: 90vh;
+        height: 100%;
         
     }
    

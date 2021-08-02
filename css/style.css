@@ -492,7 +492,8 @@ th {
     font-size: 5vh; }
 
 .imagenMenu {
-  width: 90vh; }
+  width: 90vh;
+  height: 100%; }
 
 /*CELULARES Y DISPOSITIVOS CHICOS*/
 @media only screen and (max-width: 600px) {
@@ -601,7 +602,8 @@ th {
     color: black;
     text-align: center; }
   .imagenMenu {
-    height: 90vh; } }
+    width: 90vh;
+    height: 100%; } }
 
 /*CELULARES Y DISPOSITIVOS CHICOS*/
 /*DISPOSITIVOS MEDIOS*/
@@ -654,4 +656,5 @@ th {
     color: black;
     text-align: center; }
   .imagenMenu {
-    height: 90vh; } }
+    width: 90vh;
+    height: 100%; } }
