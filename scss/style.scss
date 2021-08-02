@@ -230,10 +230,9 @@ header{
 }
 .banner{
     border-radius: 16px;
-    height: 850px;
 }
 #bannerPaginaPrincipal{
-    height: $ancho;
+    height: 100vh;
     background-image: url(../img/fondodepantalla.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -549,13 +548,13 @@ th{
 
 
 .doubleCheese{
-    max-width: 100%;
+    width: 100%;
     background-color:rgba(255, 255, 0, 0.692);
     
     h3{
         
         color: rgb(0, 0, 0);
-        font-size: 10%;
+        font-size: 100px;
         text-align: center;
     }
     p{
@@ -564,7 +563,7 @@ th{
 }
 
 .imagenMenu{
-    max-width: 100vh;
+    width: 90vh;
 }
 /*CELULARES Y DISPOSITIVOS CHICOS*/
 @media only screen and (max-width:600px){
@@ -687,9 +686,7 @@ th{
             @include menu(yellow, 1rem, 0.05rem, 0.03rem, 0.969rem, none, center);
             text-align: center;
         }
-        #imagenMenu{
-        height: 100%;
-        }
+
     }
     
     
@@ -723,7 +720,7 @@ th{
         
     }
     .imagenMenu{
-        height: 100%;
+        height: 90vh;
         
     }
    
@@ -766,7 +763,7 @@ th{
             text-align: center;
         }
         #imagenMenu{
-        height: 100%;
+        height: 90vh;
         }
     }
     
@@ -801,7 +798,7 @@ th{
         
     }
     .imagenMenu{
-        height: 100%;
+        height: 90vh;
         
     }
    

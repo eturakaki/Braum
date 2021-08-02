@@ -190,11 +190,10 @@ header {
   width: 100%; }
 
 .banner {
-  border-radius: 16px;
-  height: 850px; }
+  border-radius: 16px; }
 
 #bannerPaginaPrincipal {
-  height: 100%;
+  height: 100vh;
   background-image: url(../img/fondodepantalla.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -473,11 +472,11 @@ th {
     font-size: 5vh; }
 
 .doubleCheese {
-  max-width: 100%;
+  width: 100%;
   background-color: rgba(255, 255, 0, 0.692); }
   .doubleCheese h3 {
     color: black;
-    font-size: 10%;
+    font-size: 100px;
     text-align: center; }
   .doubleCheese p {
     color: black;
@@ -491,7 +490,7 @@ th {
     font-size: 5vh; }
 
 .imagenMenu {
-  max-width: 100vh; }
+  width: 90vh; }
 
 /*CELULARES Y DISPOSITIVOS CHICOS*/
 @media only screen and (max-width: 600px) {
@@ -574,8 +573,6 @@ th {
       list-style-type: none;
       text-align: center;
       text-align: center; }
-    .tBraum #imagenMenu {
-      height: 100%; }
   .doubleCheese {
     width: 100%;
     background-color: rgba(255, 255, 0, 0.692);
@@ -600,7 +597,7 @@ th {
     color: black;
     text-align: center; }
   .imagenMenu {
-    height: 100%; } }
+    height: 90vh; } }
 
 /*CELULARES Y DISPOSITIVOS CHICOS*/
 /*DISPOSITIVOS MEDIOS*/
@@ -626,7 +623,7 @@ th {
       text-align: center;
       text-align: center; }
     .tBraum #imagenMenu {
-      height: 100%; }
+      height: 90vh; }
   .doubleCheese {
     width: 100%;
     background-color: rgba(255, 255, 0, 0.692);
@@ -651,4 +648,4 @@ th {
     color: black;
     text-align: center; }
   .imagenMenu {
-    height: 100%; } }
+    height: 90vh; } }
