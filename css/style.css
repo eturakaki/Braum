@@ -597,7 +597,9 @@ th {
     .doubleCheese__P h3 {
       font-size: 2rem;
       color: black;
-      text-align: center; } }
+      text-align: center; }
+  .imagenFlex {
+    margin-bottom: 30px; } }
 
 /*CELULARES Y DISPOSITIVOS CHICOS*/
 /*DISPOSITIVOS MEDIOS*/
@@ -645,4 +647,6 @@ th {
     color: black;
     text-align: center; }
   .imagenMenu {
-    height: 100%; } }
+    height: 100%; }
+  .imagenFlex {
+    margin-bottom: 30px; } }
