@@ -626,8 +626,6 @@ th {
       list-style-type: none;
       text-align: center;
       text-align: center; }
-    .tBraum #imagenMenu {
-      height: 90vh; }
   .doubleCheese {
     width: 100%;
     height: 90vh;
@@ -635,7 +633,7 @@ th {
     display: flex; }
     .doubleCheese .doubleCheese__P {
       order: 1; }
-    .doubleCheese .imagenMenu {
+    .doubleCheese .imagenFlex {
       order: 2; }
   .doubleCheese__P p {
     color: black;
@@ -653,4 +651,4 @@ th {
     color: black;
     text-align: center; }
   .imagenMenu {
-    width: 100%; } }
+    height: 100%; } }
