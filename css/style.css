@@ -47,29 +47,54 @@ a {
   color: darkgrey;
   text-decoration: none; }
 
+.bannerNovedades {
+  width: 100%;
+  position: relative;
+  display: flex;
+  height: 650px;
+  background: #000000;
+  background: -webkit-linear-gradient(to right, #434343a8, #0000009a), url(../img/fondoNovedades.jpg);
+  background: linear-gradient(to right, #434343a1, #0000007e), url(../img/fondoNovedades.jpg);
+  background-position: fixed;
+  background-position: center;
+  background-size: cover;
+  justify-content: center;
+  align-items: center; }
+  .bannerNovedades h1 {
+    font-family: 'PT Serif', serif;
+    font-style: italic;
+    font-size: 4rem;
+    color: rgba(255, 255, 255, 0.877);
+    padding: 10px;
+    text-align: center;
+    margin: 0px; }
+
+.bannerNovedades__waves {
+  position: absolute;
+  width: 100%;
+  bottom: 0; }
+
 .expandir {
-  min-height: calc(100vh);
-  color: black;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  word-spacing: 0.05rem;
-  font-size: 1rem;
-  letter-spacing: 0.03rem;
-  line-height: 0.969rem;
-  text-align: start;
-  background: radial-gradient(#707070, #ccc9c9); }
-
-.expandir article h3 {
-  margin: 30px; }
-
-.expandir article ul li {
-  color: black;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  word-spacing: 0.05rem;
-  font-size: 1rem;
-  letter-spacing: 0.03rem;
-  line-height: 0.969rem;
-  text-align: start;
-  margin: 30px; }
+  min-height: calc(100vh); }
+  .expandir article p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    word-spacing: 0.05rem;
+    font-size: 1rem;
+    letter-spacing: 0.03rem;
+    line-height: 0.969rem;
+    text-align: start; }
+  .expandir article ul li {
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    word-spacing: 0.05rem;
+    font-size: 1rem;
+    letter-spacing: 0.03rem;
+    line-height: 0.969rem;
+    text-align: start;
+    margin: 30px; }
+  .expandir article h3 {
+    color: black;
+    margin: 30px; }
 
 /*HEADER*/
 header {
@@ -264,7 +289,7 @@ th {
   background-image: url(../img/front-view-burger-with-veggies-and-meat.jpg);
   -webkit-background-size: cover;
   background-size: cover;
-  background-attachment: fixed;
+  background-attachment: inherit;
   height: 100%; }
 
 .formContenedor .form .formHeader .formTitle {
@@ -455,39 +480,47 @@ th {
 /*MENU DE COMIDA*/
 .tBraum {
   background-color: black; }
-  .tBraum h3 {
-    color: whitesmoke;
-    font-size: 50px;
-    text-align: center; }
-  .tBraum p {
-    color: yellow;
-    height: 20%;
-    word-spacing: 0.05rem;
-    letter-spacing: 0.03rem;
-    line-height: 0.969rem;
-    list-style-type: none;
-    text-align: center;
-    margin: 10px;
-    font-size: 2.5rem; }
+  .tBraum .tBraum__P {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column; }
+    .tBraum .tBraum__P h3 {
+      color: whitesmoke;
+      font-size: 50px;
+      text-align: center; }
+    .tBraum .tBraum__P p {
+      color: yellow;
+      height: 30px;
+      word-spacing: 0.05rem;
+      letter-spacing: 0.03rem;
+      line-height: 0.969rem;
+      list-style-type: none;
+      text-align: center;
+      margin: 5px;
+      font-size: 1.5rem; }
 
 .doubleCheese {
   background-color: rgba(255, 255, 0, 0.692); }
-
-.doubleCheese__P h3 {
-  color: black;
-  font-size: 50px;
-  text-align: center; }
-
-.doubleCheese__P p {
-  color: black;
-  height: 20%;
-  word-spacing: 0.05rem;
-  letter-spacing: 0.03rem;
-  line-height: 0.969rem;
-  list-style-type: none;
-  text-align: center;
-  margin: 20px;
-  font-size: 2.5rem; }
+  .doubleCheese .doubleCheese__P {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column; }
+    .doubleCheese .doubleCheese__P h3 {
+      color: black;
+      font-size: 50px;
+      text-align: center; }
+    .doubleCheese .doubleCheese__P p {
+      color: black;
+      height: 30px;
+      word-spacing: 0.05rem;
+      letter-spacing: 0.03rem;
+      line-height: 0.969rem;
+      list-style-type: none;
+      text-align: center;
+      margin: 5px;
+      font-size: 1.5rem; }
 
 .imagenFlex {
   display: flex;
@@ -554,6 +587,8 @@ th {
     background-position: center;
     background-size: 100% 100%;
     border: solid black 3px; }
+  #fotoNovedades:hover {
+    transform: scale(1); }
   /*MENU MENU MENU MENU MENU MENU MENU MENU MENU DE COMIDA*/
   .tBraum {
     background-color: black; }
@@ -605,6 +640,8 @@ th {
 /*DISPOSITIVOS MEDIOS*/
 @media only screen and (max-width: 768px) {
   /*MENU MENU MENU MENU MENU MENU MENU MENU MENU DE COMIDA*/
+  #fotoNovedades:hover {
+    transform: scale(2.5); }
   .tBraum {
     background-color: black; }
   .tBraum__P {
