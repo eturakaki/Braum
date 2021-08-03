@@ -61,69 +61,7 @@ a{
     text-decoration: none;
 
 }
-.bannerNovedades{
-    width: 100%;
-    position: relative;
-    display: flex;
-    height: 650px;
-    background: #000000;  
-    background: -webkit-linear-gradient(to right, #434343a8, #0000009a), url(../img/fondoNovedades.jpg);  
-    background: linear-gradient(to right, #434343a1, #0000007e), url(../img/fondoNovedades.jpg); 
-    background-position: fixed;
-    background-position: center;
-    background-size: cover;
-    justify-content: center;
-        align-items: center;
-    h1{
-        font-family: 'PT Serif', serif;
-        font-style: italic;
-        font-size: 4rem;
-        color: rgba(255, 255, 255, 0.877);
-        padding: 10px;
-        text-align: center;
-        margin: 0px;
-    }
 
-}
-.bannerNovedades__waves{
-    position: absolute;
-    width: 100%;
-    bottom: 0;
-
-}
-.expandir{
-    min-height: calc(100vh);
-
-    
-    article{
-        p{
-            font-family: Georgia, 'Times New Roman', Times, serif;
-            word-spacing: 0.05rem;
-            font-size: 1rem;
-            letter-spacing: 0.03rem;
-            line-height: 0.969rem;
-            text-align: start;
-        }
-        ul{
-            li{
-                color: rgb(0, 0, 0);
-                font-family: Georgia, 'Times New Roman', Times, serif;
-                word-spacing: 0.05rem;
-                font-size: 1rem;
-                letter-spacing: 0.03rem;
-                line-height: 0.969rem;
-                text-align: start;
-                margin: 30px;
-            }
-        }
-        h3{
-            color: rgb(0, 0, 0);
-            margin: 30px;
-        }
-    } 
-
-
-}
 
 
 
@@ -329,13 +267,7 @@ th{
     justify-content: center;
     align-self: center;
 }
-#fotoNovedades{
-    height: 200px;
-    width: 300px;
-}
-#fotoNovedades:hover{
-    transform: scale(4);
-}
+
 /*CONTACTO*/
 
 /*FORMULARIO DE CONTACTO*/
@@ -559,6 +491,107 @@ th{
     transition: all .3s;
     
 }
+//NOVEDADES
+.bannerNovedades{
+    width: 100%;
+    position: relative;
+    display: flex;
+    height: 650px;
+    background: #000000;  
+    background: -webkit-linear-gradient(to right, #434343a8, #0000009a), url(../img/fondoNovedades.jpg);  
+    background: linear-gradient(to right, #434343a1, #0000007e), url(../img/fondoNovedades.jpg); 
+    background-position: fixed;
+    background-position: center;
+    background-size: cover;
+    justify-content: center;
+        align-items: center;
+    h1{
+        font-family: 'PT Serif', serif;
+        font-style: italic;
+        font-size: 4rem;
+        color: rgba(255, 255, 255, 0.877);
+        padding: 10px;
+        text-align: center;
+        margin: 0px;
+    }
+
+}
+.bannerNovedades__waves{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+
+}
+.introNovedades{
+    margin-bottom: 50px;
+    h3{
+        font-family: 'PT Serif', serif;
+        font-style: italic;
+        font-size: 3rem;
+        color: rgb(0, 0, 0);
+        padding: 10px;
+        text-align: center;
+        
+    }
+    p{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        word-spacing: 0.05rem;
+        font-size: 1rem;
+        letter-spacing: 0.03rem;
+        line-height: 0.969rem;
+        text-align: center;
+    }
+}
+.expandir{
+    width: 100%;
+    display: grid;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: "Texto imagen";
+    justify-content: center;
+    
+    section{
+        article{
+            margin: 10px;
+            border: 3px solid rgb(0, 0, 0);
+            grid-area: texto;
+            p{
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                word-spacing: 0.05rem;
+                font-size: 1rem;
+                letter-spacing: 0.03rem;
+                line-height: 0.969rem;
+                text-align: start;
+            }
+            ul{
+                li{
+                    color: rgb(0, 0, 0);
+                    font-family: Georgia, 'Times New Roman', Times, serif;
+                    word-spacing: 0.05rem;
+                    font-size: 1rem;
+                    letter-spacing: 0.03rem;
+                    line-height: 0.969rem;
+                    text-align: start;
+                    margin: 30px;
+                }
+            }
+            h3{
+                color: rgb(0, 0, 0);
+                margin: 30px;
+            }
+        } 
+    }
+    
+    
+    div{
+        grid-area: imagen;
+        display: flex;
+        align-items: center;
+        margin: 30px;
+    }
+
+}
+//FIN NOVEDADES
+
 /*MENU DE COMIDA*/
 
 @mixin menu($color, $altura,$espaciadoP, $espaciadoL, $alturaL, $tipoLista, $alineacion, $margen, $tamañoL) {
@@ -586,7 +619,7 @@ th{
             text-align: center;
         }
         p{
-            @include menu(yellow, 30px, 0.05rem, 0.03rem, 0.969rem, none, center, 5px, 1.5rem)
+            @include menu(yellow, 30px, 0.05rem, 0.03rem, 0.969rem, none, center, 0.313rem, 1.5rem)
         }
     }
 }
@@ -607,7 +640,7 @@ th{
             text-align: center;
         }
         p{
-            @include menu(rgb(0, 0, 0), 30px, 0.05rem, 0.03rem, 0.969rem, none, center, 5px, 1.5rem)
+            @include menu(rgb(0, 0, 0), 1.875rem, 0.05rem, 0.03rem, 0.969rem, none, center, 0.313rem, 1.5rem)
         }
     }
 }
@@ -617,6 +650,7 @@ th{
     display: flex;
     justify-content: center;
 }
+//FIN MENÚ DE COMIDA
 
 /*CELULARES Y DISPOSITIVOS CHICOS*/
 @media only screen and (max-width:600px){
@@ -710,9 +744,7 @@ th{
     }
 
 
-    #fotoNovedades:hover{
-        transform: scale(1);
-    }
+    
     /*MENU MENU MENU MENU MENU MENU MENU MENU MENU DE COMIDA*/
 
     @mixin menu($color,$tamanioLetra, $espaciadoP, $espaciadoL, $alturaL, $tipoLista, $alineacion) {
@@ -777,7 +809,13 @@ th{
     .imagenFlex{
         margin-bottom: 30px;
     }
-        
+    
+    .expandir{
+
+        grid-template-areas: "Texto"
+                             "imagen"  ;
+    }
+
     
 }
 /*CELULARES Y DISPOSITIVOS CHICOS*/
@@ -787,9 +825,6 @@ th{
 /*DISPOSITIVOS MEDIOS*/
 @media only screen and (max-width:768px){
     /*MENU MENU MENU MENU MENU MENU MENU MENU MENU DE COMIDA*/
-    #fotoNovedades:hover{
-        transform: scale(2.5);
-    }
     @mixin menu($color,$tamanioLetra, $espaciadoP, $espaciadoL, $alturaL, $tipoLista, $alineacion) {
         color: $color;
         font-size: $tamanioLetra;
@@ -852,5 +887,17 @@ th{
     .imagenFlex{
         margin-bottom: 30px;
     }
-   
+    .expandir{
+
+        grid-template-areas: "Texto"
+                             "imagen" ;
+
+        div{
+            justify-content: center;
+            img{
+                width: 100%;
+            }
+        }
+    }
+
 }
