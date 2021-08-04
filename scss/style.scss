@@ -496,19 +496,18 @@ a{
         text-align: center;
         margin: 0px;
     }
-
+    .bannerNovedades__waves{
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+    }
 }
-.bannerNovedades__waves{
-    position: absolute;
-    width: 100%;
-    bottom: 0;
 
-}
 .introNovedades{
     padding-bottom: 50px;
     background: #ffffff;  
-    background: -webkit-linear-gradient(to right, #434343de, #000000a9), url(../img/29.jpg);  
-    background: linear-gradient(to right, #434343b4, #00000098), url(../img/29.jpg); 
+    background: -webkit-linear-gradient(to right, #f5f3f3b4, #74727249), url(../img/plain-backdrop-decorative-gray-textured.jpg);  
+    background: linear-gradient(to right, #f8f8f8b4, #77757525), url(../img/plain-backdrop-decorative-gray-textured.jpg); 
     h3{
         font-family: 'PT Serif', serif;
         font-style: italic;
@@ -516,6 +515,7 @@ a{
         color: rgb(0, 0, 0);
         padding: 10px;
         text-align: center;
+        margin: 0px;
         
     }
     p{
@@ -531,8 +531,8 @@ a{
     width: 100%;
     display: grid;
     background: #ffffff;  
-    background: -webkit-linear-gradient(to right, #ffffff7a, #00000060), url(../img/29.jpg);  
-    background: linear-gradient(to right, #ffffff80, #00000067), url(../img/29.jpg); 
+    background: -webkit-linear-gradient(to right, #f5f3f3b4, #74727249), url(../img/plain-backdrop-decorative-gray-textured.jpg);  
+    background: linear-gradient(to right, #f8f8f8b4, #77757525), url(../img/plain-backdrop-decorative-gray-textured.jpg); 
     grid-template-rows: 50% 50%;
     grid-template-areas: "Texto imagen";
     justify-content: center;
