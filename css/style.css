@@ -445,17 +445,14 @@ a {
 
 .expandir {
   width: 100%;
-  display: grid;
+  display: flex;
   background: #ffffff;
   background: -webkit-linear-gradient(to right, #f5f3f3b4, #74727249), url(../img/plain-backdrop-decorative-gray-textured.jpg);
   background: linear-gradient(to right, #f8f8f8b4, #77757525), url(../img/plain-backdrop-decorative-gray-textured.jpg);
-  grid-template-rows: 50% 50%;
-  grid-template-areas: "Texto imagen";
   justify-content: center; }
   .expandir section article {
     margin: 10px;
-    border: 3px solid black;
-    grid-area: texto; }
+    border: 3px solid black; }
     .expandir section article p {
       font-family: Georgia, 'Times New Roman', Times, serif;
       word-spacing: 0.05rem;
@@ -476,7 +473,6 @@ a {
       color: black;
       margin: 30px; }
   .expandir div {
-    grid-area: imagen;
     display: flex;
     align-items: center;
     margin: 30px; }
@@ -656,7 +652,10 @@ a {
   .imagenFlex {
     margin-bottom: 30px; }
   .expandir {
-    grid-template-areas: "Texto" "imagen"; } }
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row; } }
 
 /*CELULARES Y DISPOSITIVOS CHICOS*/
 /*DISPOSITIVOS MEDIOS*/
@@ -714,8 +713,7 @@ a {
   .imagenFlex {
     margin-bottom: 30px; }
   .expandir {
-    grid-template-areas: "Texto" "imagen"; }
-    .expandir div {
-      justify-content: center; }
-      .expandir div img {
-        width: 100%; } }
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column; } }
