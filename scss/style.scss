@@ -69,26 +69,24 @@ a{
 
 /*HEADER*/
 
-header{
-    background-color: black;
-    width: $ancho;
-}
-.header__logo{
-    width: 200px;
-    height: $ancho;
-    display: flex;
-}
+
 .header{
     background-color: black;
     width: $ancho;
     height: 100px;
     display: flex;
     justify-content: space-between;
+    .header__logo{
+        width: 200px;
+        height: $ancho;
+        display: flex;
+        .header__logo-imagen{
+            width: $ancho;
+            height: $ancho;
+        }
+    }
 }
-.header__logo-imagen{
-    width: $ancho;
-    height: $ancho;
-}
+
 .imagenUno{
     height: 100%;
     width: 100%;
@@ -102,31 +100,27 @@ header{
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    align-items: flex-end;   
-}
-.header__navegación-menu{
-    display: flex;
-    
-}
-.header__navegacion{
+    align-items: flex-end;
     ul{
         list-style: none;
     }
-    
-}
-.header__navegación-menu{
-    li{
-        position: relative;
-        display: inline-block;
-        a{
-            display: block;
-        padding: 15px 10px;
-        color: 353535;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        text-decoration: none;
+    .header__navegación-menu{
+        display: flex;
+        li{
+            position: relative;
+            display: inline-block;
+            a{
+                display: block;
+            padding: 15px 10px;
+            color: 353535;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            text-decoration: none;
+            }
         }
+        
     }
 }
+
 
 .header__navegación-menu li a:hover{
     color: darkred;
@@ -135,8 +129,6 @@ header{
 }
 /*MENU DE NAVEGACIÓN*/
 
-
-/* SUBMENÚ DE NAVEGACIÓN*/
  
 /*BLOQUES DE PAGINA*/
 .main{
@@ -174,19 +166,23 @@ header{
     align-items: flex-start;
     
 }
-.main__bloqueuno p{
-    color: blanchedalmond;
+.main__bloqueuno {
+    p{
+        color: blanchedalmond;
     font-weight: bold;
     letter-spacing: 0.03rem;
+    }
+    .main__bloqueuno-segmentoDeIndex{
+        margin: 6px;
+        width: $ancho;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
 }
-.main__bloqueuno-segmentoDeIndex{
-    margin: 6px;
-    width: $ancho;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
+
 
 .bloqueImagen{
     margin: 20px;
@@ -218,20 +214,7 @@ header{
 }
 /*BLOQUES DE PAGINA*/
 
-/*menu*/
-#titulollamativo{
-    background-color: rgba(255, 255, 0, 0.692);
-    font-size: 40px;
-    color: navy;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 20px;
-}
-th{
-    color: maroon;
-}
-/*menu*/
+
 
 /*NOSOTROS*/
 .main__videos-Youtube{
@@ -430,27 +413,24 @@ th{
     width: $ancho;
     height: 60px;
     position: relative;
-    
-}
-.footer__navegacion{
     ul{
         list-style: none;
     }
-    
-}
-.footer__navegacion-menu{
-    li{
-        display: inline-block;
-        a{
-            padding: 15px 10px;
-            color: 353535;
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-            text-decoration: none;
+    .footer__navegacion-menu{
+        li{
+            display: inline-block;
+            a{
+                padding: 15px 10px;
+                color: 353535;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                text-decoration: none;
+            }
         }
-    }
+        
     
-
+    }
 }
+
 .footer__navegacion-menu li a:hover{
     color: darkred;
     transition: all .3s;
@@ -465,15 +445,15 @@ th{
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    align-items: flex-end;   
+    align-items: flex-end;
+    .header__navegación-menu{
+        display: flex;
+        ul{
+            list-style: none;
+        }
+    } 
 }
-.header__navegación-menu{
-    display: flex;
-    
-}
-.header__navegacion ul{
-    list-style: none;
-}
+
 .header__navegación-menu > li{
     position: relative;
     display: inline-block;
@@ -593,6 +573,20 @@ th{
 //FIN NOVEDADES
 
 /*MENU DE COMIDA*/
+.titulollamativo{
+    width: 100%;
+    background-color: rgba(255, 255, 0, 0.692);
+    margin: 0px;
+    
+    h2{
+        margin:0px;
+        width: 100%;
+        text-align: center;
+        font-size: 40px;
+        overflow: hidden;
+    }
+}
+
 
 @mixin menu($color, $altura,$espaciadoP, $espaciadoL, $alturaL, $tipoLista, $alineacion, $margen, $tamañoL) {
     color: $color;
@@ -606,16 +600,20 @@ th{
     font-size: $tamañoL;
 }
 .tBraum{
-    
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
     background-color: black;
     .tBraum__P{
+        padding: 0px;
         display: flex;
         justify-content: space-evenly;
         align-items: center;
         flex-direction: column;
         h3{
+            margin: 0px;
             color: whitesmoke;
-            font-size: 50px;
+            font-size: 2.5rem;
             text-align: center;
         }
         p{
@@ -626,7 +624,8 @@ th{
 
 
 .doubleCheese{
-    
+    width: 100%;
+    margin: 0px;
     background-color:rgba(255, 255, 0, 0.692);
     .doubleCheese__P{
         display: flex;
@@ -636,7 +635,7 @@ th{
         h3{
             
             color: rgb(0, 0, 0);
-            font-size: 50px;
+            font-size: 2.5rem;
             text-align: center;
         }
         p{
@@ -649,6 +648,7 @@ th{
 .imagenFlex{
     display: flex;
     justify-content: center;
+    padding: 0px;
 }
 //FIN MENÚ DE COMIDA
 
@@ -758,53 +758,58 @@ th{
     }
     
     .tBraum{
+        width: 100%;
+        margin: 0px;
         background-color: rgb(0, 0, 0);
+        .tBraum__P{
+            margin: 10px;
+            h3{
+                font-size: 2rem;
+                color: whitesmoke;
+                text-align: center;
+            }
+            p{
+                @include menu(yellow, 1rem, 0.05rem, 0.03rem, 0.969rem, none, center);
+                text-align: center;
+                margin: 10px;
+                height: 25px;
+            }
+        }
 
     }
-    .tBraum__P{
-        margin: 10px;
-        h3{
-            font-size: 2rem;
-            color: whitesmoke;
-            text-align: center;
-        }
-        p{
-            @include menu(yellow, 1rem, 0.05rem, 0.03rem, 0.969rem, none, center);
-            text-align: center;
-            margin: 10px;
-            height: 25px;
-        }
-    }
+    
     
     
     
     .doubleCheese{
         background-color: rgba(255, 255, 0, 0.692);
+        width: 100%;
+        margin: 0px;
         display: flex;
+
         .doubleCheese__P{
+            margin: 10px;
             order: 1;
+    
+            p{
+                @include menu(rgb(0, 0, 0), 1rem, 0.05rem, 0.03rem, 0.969rem, none, center);
+                text-align: center;
+                margin: 10px;
+                height: 25px;
+            }
+            h3{
+                font-size: 2rem;
+                color: rgb(0, 0, 0);
+                text-align: center;
+            }
+            
         }
         .imagenFlex{
             order: 2;
         }
         
     }
-    .doubleCheese__P{
-        margin: 10px;
-
-        p{
-            @include menu(rgb(0, 0, 0), 1rem, 0.05rem, 0.03rem, 0.969rem, none, center);
-            text-align: center;
-            margin: 10px;
-            height: 25px;
-        }
-        h3{
-            font-size: 2rem;
-            color: rgb(0, 0, 0);
-            text-align: center;
-        }
-        
-    }
+    
    
     .imagenFlex{
         margin-bottom: 30px;
@@ -824,6 +829,7 @@ th{
 
 /*DISPOSITIVOS MEDIOS*/
 @media only screen and (max-width:768px){
+
     /*MENU MENU MENU MENU MENU MENU MENU MENU MENU DE COMIDA*/
     @mixin menu($color,$tamanioLetra, $espaciadoP, $espaciadoL, $alturaL, $tipoLista, $alineacion) {
         color: $color;
@@ -836,53 +842,57 @@ th{
     }
     
     .tBraum{
+        width: 100%;
+        margin: 0px;
+        overflow: hidden;
         background-color: rgb(0, 0, 0);
-
-    }
-    .tBraum__P{
-        margin: 10px;
-        h3{
-            font-size: 2rem;
-            color: whitesmoke;
-            text-align: center;
-        }
-        p{
-            @include menu(yellow, 1rem, 0.05rem, 0.03rem, 0.969rem, none, center);
-            text-align: center;
+        .tBraum__P{
             margin: 10px;
-            height: 25px;
+            h3{
+                font-size: 2rem;
+                color: whitesmoke;
+                text-align: center;
+            }
+            p{
+                @include menu(yellow, 1rem, 0.05rem, 0.03rem, 0.969rem, none, center);
+                text-align: center;
+                margin: 10px;
+                height: 25px;
+            }
         }
     }
+    
     
     
     .doubleCheese{
+        width: 100%;
+        margin: 0px;
         background-color: rgba(255, 255, 0, 0.692);
         display: flex;
+        overflow: hidden;
         .doubleCheese__P{
             order: 1;
+            p{
+                @include menu(rgb(0, 0, 0), 1rem, 0.05rem, 0.03rem, 0.969rem, none, center);
+                text-align: center;
+                margin: 10px;
+                height: 25px;
+            }
+            h3{
+                font-size: 2rem;
+                color: rgb(0, 0, 0);
+                text-align: center;
+            }
+            
         }
         .imagenFlex{
             order: 2;
         }
         
     }
-    .doubleCheese__P{
-
-        p{
-            @include menu(rgb(0, 0, 0), 1rem, 0.05rem, 0.03rem, 0.969rem, none, center);
-            text-align: center;
-            margin: 10px;
-            height: 25px;
-        }
-        h3{
-            font-size: 2rem;
-            color: rgb(0, 0, 0);
-            text-align: center;
-        }
-        
-    }
+   
     .imagenMenu{
-        height: 100%;
+        width: 100%;
     }
     .imagenFlex{
         margin-bottom: 30px;
@@ -899,5 +909,4 @@ th{
             }
         }
     }
-
 }
